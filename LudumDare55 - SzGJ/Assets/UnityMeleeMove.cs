@@ -10,15 +10,18 @@ public class UnityMeleeMove : MonoBehaviour
     private GameObject[] AllTargets;
     private GameObject ClosestTarget;
 
+
     private void Update()
     {
+        if (Input.GetMouseButton(1))
+        {
+            transform.position = Vector2.MoveTowards(transform.position, GameObject.Find("Main Camera").GetComponent<Camera>().ScreenToWorldPoint(Input.mousePosition), speed * Time.deltaTime);
+            return;
+        }
         FindClosest();
-    }
-    private void FixedUpdate()
-    {
         if (ClosestTarget != null)
         {
-            transform.position = Vector3.MoveTowards(transform.position, ClosestTarget.transform.position, speed);
+            transform.position = Vector2.MoveTowards(transform.position, ClosestTarget.transform.position, speed * Time.deltaTime);
         }
     }
 
