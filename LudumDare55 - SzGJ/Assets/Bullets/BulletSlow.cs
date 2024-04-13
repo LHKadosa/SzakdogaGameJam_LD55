@@ -37,6 +37,7 @@ public class BulletSlow : MonoBehaviour
         {
             if (other.gameObject.GetComponent<UnityMeleeMove>() != null) other.gameObject.GetComponent<UnityMeleeMove>().SlowDown();
             if (other.gameObject.GetComponent<UnityRangedMove>() != null) other.gameObject.GetComponent<UnityRangedMove>().SlowDown();
+            if (other.gameObject.GetComponent<UnitySuicideBomber>() != null) other.gameObject.GetComponent<UnitySuicideBomber>().SlowDown();
             Destroy(gameObject);
         }
     }

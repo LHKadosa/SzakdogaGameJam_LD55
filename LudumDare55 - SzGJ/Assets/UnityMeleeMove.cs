@@ -7,11 +7,12 @@ public class UnityMeleeMove : MonoBehaviour
     [Header("Melee unit's statistics")]
     public float speedMax = 1f;
     public int damage = 50;
+    public float SetSpeedBackInSeconds = 5f;
+    public float HitTowerInSeconds = 0.5f;
     private Vector2 direction; //majd a sprite elforgatásához
     private GameObject[] AllTargets;
     private GameObject ClosestTarget;
 
-    private float SetSpeedBackInSeconds = 5f;
     private float speed;
 
     private void Start()
@@ -78,6 +79,8 @@ public class UnityMeleeMove : MonoBehaviour
         if (other.collider.gameObject.tag == "Tower")
         {
             other.gameObject.GetComponent<HealthTower>().TakeDamage(damage);
+            this.transform.position -= (other.transform.position - this.transform.position);
         }
     }
+
 }
