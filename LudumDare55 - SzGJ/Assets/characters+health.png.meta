@@ -121,7 +121,301 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Summon_Green1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 43
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 370a9e9ae2ef0c541873ac1dd557482c
+      internalID: -199196023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Summon_Green2
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 43
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0565b8c7a9cb56741882d84d1b8af9a3
+      internalID: -847401066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Summon_Green3
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 43
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a278bb8009653ca41b7007156ff9df1c
+      internalID: 792076553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Summon_Red1
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 43
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dab8bdfe95796cf40a489cfa41c68303
+      internalID: -572427868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Summon_Red2
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 43
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9757405f684d734cab46822e49eeab4
+      internalID: -453787157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Summon_Red3
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 43
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5227f36f9b6341d4390f328546becd46
+      internalID: -241007733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Summon_Blue1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 21
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae15905801a441c4a8e19c1fc052024c
+      internalID: 256387788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Summon_Blue2
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 21
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f55792c80355e1443ad888712ff13eb6
+      internalID: 257829158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Summon_Blue3
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 21
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 597d5abf1877c6a4b9a6085312743470
+      internalID: -877913106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Summon_Yellow1
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 20
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7888982f87002f5499dbf6e70166cfea
+      internalID: -585850794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Summon_Yellow2
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 20
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 990c259085fd85f48867da099abb2489
+      internalID: -151612268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Summon_Yellow3
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 20
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94db1d02f95bb254fa0cdf758395009a
+      internalID: 352263953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Health0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 16
+        width: 22
+        height: 3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07120ea206437554193a6d8db7e3e5ed
+      internalID: -248807690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Health1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 12
+        width: 22
+        height: 3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e25744402256b2c4f81106470b4f2f5e
+      internalID: -923956641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +426,21 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Health0: -248807690
+      Health1: -923956641
+      Summon_Blue1: 256387788
+      Summon_Blue2: 257829158
+      Summon_Blue3: -877913106
+      Summon_Green1: -199196023
+      Summon_Green2: -847401066
+      Summon_Green3: 792076553
+      Summon_Red1: -572427868
+      Summon_Red2: -453787157
+      Summon_Red3: -241007733
+      Summon_Yellow1: -585850794
+      Summon_Yellow2: -151612268
+      Summon_Yellow3: 352263953
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
