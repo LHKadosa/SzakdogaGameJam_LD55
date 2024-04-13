@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 91a7178b33dd48943b5e6dba0ae5e242
+guid: ccfaf9aac0185a740abc5e2de0b6de85
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -123,11 +123,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tower Destroyed
+      name: Coin0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 25
+        x: 5
+        y: 48
         width: 13
         height: 13
       alignment: 0
@@ -137,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2b2e4f6de67296468cf93f727ea4d6b
-      internalID: -1418437929
+      spriteID: 4cee0c413dbc8ef44a2f82c9f1feac83
+      internalID: 824129228
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire1
+      name: Coin1
       rect:
         serializedVersion: 2
-        x: 19
-        y: 26
-        width: 10
-        height: 15
+        x: 24
+        y: 48
+        width: 4
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,71 +158,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa5cb9e4a6950274fb58756d4b403b73
-      internalID: -1228502666
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fire2
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 18
-        width: 14
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a93758cc3d3a53546b95748fa55d258a
-      internalID: -509015003
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Smoke1
-      rect:
-        serializedVersion: 2
-        x: 11
-        y: 43
-        width: 15
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 079820436d921c94d987665124bd681e
-      internalID: 1264500181
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Smoke2
-      rect:
-        serializedVersion: 2
-        x: 31
-        y: 42
-        width: 19
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 50622034ff081fa48b5dc3ef097893f4
-      internalID: 43036310
+      spriteID: 91b99e1ae8180ae4992ed22f268ff819
+      internalID: 1887040956
       vertices: []
       indices: 
       edges: []
@@ -238,11 +175,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Fire1: -1228502666
-      Fire2: -509015003
-      Smoke1: 1264500181
-      Smoke2: 43036310
-      Tower Destroyed: -1418437929
+      Coin0: 824129228
+      Coin1: 1887040956
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

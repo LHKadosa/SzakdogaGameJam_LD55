@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ff07b3627c755bc4d862e784cde08379
+guid: 02b65f1517631c440ba955eb00bf11c2
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Shield0
+      name: Tower_Blue
       rect:
         serializedVersion: 2
-        x: 0
-        y: 35
-        width: 38
-        height: 29
+        x: 1
+        y: 45
+        width: 13
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b1aa6b924a04df94ab75cc271f0b48e2
-      internalID: -1385109200
+      spriteID: 33e3f9c7815dbd84daea4964e1d33ea1
+      internalID: 1536264968
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shield1
+      name: Tower_Red
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2
-        width: 38
-        height: 29
+        x: 15
+        y: 45
+        width: 13
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,8 +158,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62847fc3593171c4c8327df9ad08d1fa
-      internalID: -1207089203
+      spriteID: c4c15e5ffcf4f2e428e800e83af8f61f
+      internalID: 287890258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower_Green
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 45
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bdc2102a929e54468e955c07ee24a82
+      internalID: 847059257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower_Yellow
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 45
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e392ac5cd9838743aa7a847a3788e91
+      internalID: -2004251652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Grassy
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 23
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a34a8755889269c418414d8b4f4d5569
+      internalID: 917987939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_RedSand
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 20
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3943e02b55afeb3478e4fb1e43aaf920
+      internalID: 1136155949
       vertices: []
       indices: 
       edges: []
@@ -168,15 +252,19 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 0
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Shield0: -1385109200
-      Shield1: -1207089203
+      Ground_Grassy: 917987939
+      Ground_RedSand: 1136155949
+      Tower_Blue: 1536264968
+      Tower_Green: 847059257
+      Tower_Red: 287890258
+      Tower_Yellow: -2004251652
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
