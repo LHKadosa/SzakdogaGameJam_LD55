@@ -20,7 +20,6 @@ public class Turret : MonoBehaviour
     private void Update(){
         FindClosest(); ///TODO: Nem jó, hogy minden frame-ben nézi
 
-        //Debug.Log(ClosestTarget.name);
         if (ClosestTarget != null)
         {
             timeUntilFire += Time.deltaTime;
@@ -48,7 +47,7 @@ public class Turret : MonoBehaviour
 
         foreach (GameObject currentTartget in AllTargets)
         {
-            float distanceToTarget = (currentTartget.transform.position - this.transform.position).sqrMagnitude;
+            float distanceToTarget = Vector3.Distance(currentTartget.transform.position, transform.position);
             if (distanceToTarget < ClosestEnemyDistance && distanceToTarget<=targetingRange)
             {
                 ClosestEnemyDistance = distanceToTarget;
