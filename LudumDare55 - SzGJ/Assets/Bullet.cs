@@ -27,7 +27,10 @@ public class Bullet : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        other.gameObject.GetComponent<HealthSummon>().TakeDamage(bulletDamage);
-        Destroy(gameObject);
+        if (other.collider.gameObject.tag == "Summon")
+        {
+            other.gameObject.GetComponent<HealthSummon>().TakeDamage(bulletDamage);
+            Destroy(gameObject);
+        }
     }
 }

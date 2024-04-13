@@ -6,6 +6,7 @@ public class UnityMeleeMove : MonoBehaviour
 {
     [Header("Melee unit's statistics")]
     public float speed = 1f;
+    public int damage = 50;
     private Vector2 direction; //majd a sprite elforgatásához
     private GameObject[] AllTargets;
     private GameObject ClosestTarget;
@@ -48,6 +49,14 @@ public class UnityMeleeMove : MonoBehaviour
         {
             Gizmos.color = Color.red;
             Gizmos.DrawLine(this.transform.position, ClosestTarget.transform.position);
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.collider.gameObject.tag == "Tower")
+        {
+            other.gameObject.GetComponent<HealthTower>().TakeDamage(damage);
         }
     }
 }
