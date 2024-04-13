@@ -2,15 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BulletBoom : MonoBehaviour
+public class BulletSlow : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] private Rigidbody2D rb;
 
     [Header("Attribute")]
     [SerializeField] private float bulletSpeed = 5f;
-    [SerializeField] private int bulletDamage = 1;
-    [SerializeField] private int boomRange = 5;
 
     private Transform target;
     private float DestroySelfInSeconds = 5f;
@@ -19,7 +17,6 @@ public class BulletBoom : MonoBehaviour
     {
         StartCoroutine(DestroyBulletAfterSeconds()); //önmegsemmisítõ
     }
-
     public void SetTarget(Transform target_)
     {
         target = target_;
@@ -38,21 +35,11 @@ public class BulletBoom : MonoBehaviour
     {
         if (other.collider.gameObject.tag == "Summon")
         {
-            GameObject[] AllTargets = GameObject.FindGameObjectsWithTag("Summon");
-
-            foreach (GameObject currentTartget in AllTargets)
-            {
-                float distanceToTarget = Vector3.Distance(currentTartget.transform.position, transform.position);
-                if (distanceToTarget <= boomRange)
-                {
-                    currentTartget.gameObject.GetComponent<HealthSummon>().TakeDamage(bulletDamage);
-                }
-            }
-
+            if (other.gameObject.GetComponent<UnityMeleeMove>() != null) other.gameObject.GetComponent<UnityMeleeMove>().SlowDown();
+            if (other.gameObject.GetComponent<UnityRangedMove>() != null) other.gameObject.GetComponent<UnityRangedMove>().SlowDown();
             Destroy(gameObject);
         }
     }
-
     IEnumerator DestroyBulletAfterSeconds()
     {
         while (true)

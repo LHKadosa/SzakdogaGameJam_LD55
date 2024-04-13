@@ -12,6 +12,12 @@ public class Bullet : MonoBehaviour
     [SerializeField] private int bulletDamage = 1;
 
     private Transform target;
+    private float DestroySelfInSeconds = 5f;
+
+    public void Start()
+    {
+        StartCoroutine(DestroyBulletAfterSeconds()); //önmegsemmisítõ
+    }
 
     public void SetTarget(Transform target_){
         target = target_;
@@ -31,6 +37,15 @@ public class Bullet : MonoBehaviour
         {
             other.gameObject.GetComponent<HealthSummon>().TakeDamage(bulletDamage);
             Destroy(gameObject);
+        }
+    }
+    IEnumerator DestroyBulletAfterSeconds()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(DestroySelfInSeconds);
+            Destroy(gameObject);
+            //Debug.Log("Bullet destroyed becouse it did not hit anything.");
         }
     }
 }

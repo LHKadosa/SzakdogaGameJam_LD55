@@ -6,7 +6,7 @@ public class UnityRangedMove : MonoBehaviour
 {
     [Header("Ranged unit's statistics")]
     [SerializeField] private GameObject bulletPrefab;
-    public float speed = 0.75f;
+    public float speedMax = 0.75f;
     public int damage = 25;
     private Vector2 direction; //majd a sprite elforgatásához
     private GameObject[] AllTargets;
@@ -16,6 +16,13 @@ public class UnityRangedMove : MonoBehaviour
     [SerializeField] private float bulletsPerSecond = 1f;
     private float timeUntilFire;
 
+    private float SetSpeedBackInSeconds = 5f;
+    private float speed;
+
+    private void Start()
+    {
+        speed = speedMax;
+    }
 
     private void Update()
     {
@@ -66,6 +73,20 @@ public class UnityRangedMove : MonoBehaviour
         GameObject bulletObj = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
         BulletSummon bulletScript = bulletObj.GetComponent<BulletSummon>();
         bulletScript.SetTarget(ClosestTarget.transform);
+    }
+
+    public void SlowDown()
+    {
+        speed = speedMax / 4; //Valami idözitövel vissza lehetne majd állítani
+        StartCoroutine(setSpeedBack());
+    }
+    IEnumerator setSpeedBack()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(SetSpeedBackInSeconds);
+            speed = speedMax;
+        }
     }
 
     private void OnDrawGizmosSelected()

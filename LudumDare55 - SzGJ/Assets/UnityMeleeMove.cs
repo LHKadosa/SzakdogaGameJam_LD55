@@ -5,12 +5,19 @@ using UnityEngine;
 public class UnityMeleeMove : MonoBehaviour
 {
     [Header("Melee unit's statistics")]
-    public float speed = 1f;
+    public float speedMax = 1f;
     public int damage = 50;
     private Vector2 direction; //majd a sprite elforgatásához
     private GameObject[] AllTargets;
     private GameObject ClosestTarget;
 
+    private float SetSpeedBackInSeconds = 5f;
+    private float speed;
+
+    private void Start()
+    {
+        speed = speedMax;
+    }
 
     private void Update()
     {
@@ -40,6 +47,20 @@ public class UnityMeleeMove : MonoBehaviour
                 ClosestEnemyDistance = distanceToTarget;
                 ClosestTarget = currentTartget;
             }
+        }
+    }
+
+    public void SlowDown()
+    {
+        speed = speedMax/4; //Valami idözitövel vissza lehetne majd állítani
+        StartCoroutine(setSpeedBack());
+    }
+    IEnumerator setSpeedBack()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(SetSpeedBackInSeconds);
+            speed = speedMax;
         }
     }
 

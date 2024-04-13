@@ -44,6 +44,9 @@ public class Turret : MonoBehaviour
 
         BulletBoom bulletScript3 = bulletObj.GetComponent<BulletBoom>();
         if (bulletScript3 != null) bulletScript3.SetTarget(ClosestTarget.transform);
+
+        BulletSlow bulletScript4 = bulletObj.GetComponent<BulletSlow>();
+        if (bulletScript4 != null) bulletScript4.SetTarget(ClosestTarget.transform);
     }
     
     private void FindClosest()
