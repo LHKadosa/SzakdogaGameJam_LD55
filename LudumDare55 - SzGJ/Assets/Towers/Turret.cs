@@ -35,8 +35,15 @@ public class Turret : MonoBehaviour
 
     private void Shoot(){
         GameObject bulletObj = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
+        
         Bullet bulletScript = bulletObj.GetComponent<Bullet>();
-        bulletScript.SetTarget(ClosestTarget.transform);
+        if(bulletScript!=null) bulletScript.SetTarget(ClosestTarget.transform);
+
+        BulletMultishot bulletScript2 = bulletObj.GetComponent<BulletMultishot>(); //Nagyon idétlen, de nem érdekel
+        if (bulletScript2 != null) bulletScript2.SetTarget(ClosestTarget.transform);
+
+        BulletBoom bulletScript3 = bulletObj.GetComponent<BulletBoom>();
+        if (bulletScript3 != null) bulletScript3.SetTarget(ClosestTarget.transform);
     }
     
     private void FindClosest()
