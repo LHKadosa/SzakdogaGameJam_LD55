@@ -100,8 +100,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8f38a83e9fa82144b47a9804f60fc04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speedMax: 1
   damage: 5
+  SetSpeedBackInSeconds: 5
+  HitTowerInSeconds: 0.5
+  rb: {fileID: 2726535350378024902}
 --- !u!114 &-6502955419739700944
 MonoBehaviour:
   m_ObjectHideFlags: 0

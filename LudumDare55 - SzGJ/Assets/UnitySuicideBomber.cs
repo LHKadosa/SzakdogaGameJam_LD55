@@ -5,13 +5,16 @@ using UnityEngine;
 public class UnitySuicideBomber : MonoBehaviour
 {
     [Header("Bomber unit's statistics")]
-    public float speed = 6.5f;
+    public float speedMax = 6.5f;
     public int damage = 300;
+    public float SetSpeedBackInSeconds = 5f;
     private Vector2 direction; //majd a sprite elforgatásához
     private GameObject[] AllTargets;
     private GameObject ClosestTarget;
 
     public List<GameObject> currentCollisions = new List<GameObject>();
+
+    private float speed;
 
     private void Update()
     {
@@ -40,6 +43,19 @@ public class UnitySuicideBomber : MonoBehaviour
                 ClosestEnemyDistance = distanceToTarget;
                 ClosestTarget = currentTartget;
             }
+        }
+    }
+    public void SlowDown()
+    {
+        speed = speedMax / 4; //Valami idözitövel vissza lehetne majd állítani
+        StartCoroutine(setSpeedBack());
+    }
+    IEnumerator setSpeedBack()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(SetSpeedBackInSeconds);
+            speed = speedMax;
         }
     }
 
