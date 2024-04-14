@@ -56,11 +56,17 @@ TagManager:
   - name: Tower
     uniqueID: 1102877379
     locked: 0
-  - name: Summon
-    uniqueID: 24849997
+  - name: Destroyed
+    uniqueID: 1195191851
     locked: 0
   - name: Effects
     uniqueID: 2337646081
+    locked: 0
+  - name: Summon
+    uniqueID: 24849997
+    locked: 0
+  - name: Bullets
+    uniqueID: 923320877
     locked: 0
   - name: UI
     uniqueID: 3374143181
