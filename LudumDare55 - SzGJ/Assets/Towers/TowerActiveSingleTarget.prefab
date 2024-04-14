@@ -315,10 +315,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c84f7723be78a142baeed214b9fd181, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sc: {fileID: 0}
   maxHealth: 100
   TowerChunkRemain: {fileID: 1609036746236087250, guid: dbb88f3ca210bda45a868faccc14dd40, type: 3}
-  moneyAfterDeath: 200
+  moneyAfterDeath: 150
   healthBar: {fileID: 1721634014036579598}
   health: {fileID: 1546300164431619010}
 --- !u!114 &7370563217434865551
@@ -334,7 +333,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 2664831136143054358, guid: af84926744744be439ee8fa505ffc8b9, type: 3}
-  targetingRange: 4
+  targetingRange: 5
   bulletsPerSecond: 3
 --- !u!61 &80999526076457199
 BoxCollider2D:

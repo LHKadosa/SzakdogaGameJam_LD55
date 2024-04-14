@@ -7,7 +7,7 @@ public class UnityRangedMove : MonoBehaviour
     [Header("Ranged unit's statistics")]
     [SerializeField] private GameObject bulletPrefab;
     public float speedMax = 0.75f;
-    public int damage = 25;
+    //public int damage = 25;
     private Vector2 direction;
     private Vector2 direction_mouse;
     private GameObject[] AllTargets;

@@ -164,4 +164,4 @@ MonoBehaviour:
   rb: {fileID: 3916466954310447290}
   bulletSpeed: 1.5
   bulletDamage: 50
-  boomRange: 5
+  boomRange: 2

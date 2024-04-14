@@ -458,7 +458,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62c9f20c1185c7b49b9c6d622fdfe04f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 75
   healthBar: {fileID: 4583116875830840744}
   health: {fileID: 2425901644805790445}
 --- !u!114 &7813070787407000766
@@ -474,7 +474,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedMax: 1
-  damage: 20
+  damage: 25
   SetSpeedBackInSeconds: 5
   HitTowerInSeconds: 0.5
   animator: {fileID: 586652537781985620}

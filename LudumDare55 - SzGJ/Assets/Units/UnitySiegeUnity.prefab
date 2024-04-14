@@ -382,7 +382,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62c9f20c1185c7b49b9c6d622fdfe04f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 25
+  maxHealth: 10
   healthBar: {fileID: 434050656559613736}
   health: {fileID: 2677053058081645832}
 --- !u!114 &-1220508225925193995
@@ -399,10 +399,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 2664831136143054358, guid: 09e059f3c3c3f17428ca4dce35503afc, type: 3}
   speedMax: 0.5
-  damage: 50
   animator: {fileID: 207208549952323172}
-  targetingRange: 6
-  bulletsPerSecond: 0.5
+  targetingRange: 4.9
+  bulletsPerSecond: 1.5
 --- !u!70 &1571082863867859056
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

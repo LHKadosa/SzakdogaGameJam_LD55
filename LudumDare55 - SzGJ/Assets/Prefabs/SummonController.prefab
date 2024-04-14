@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4494521174992490746
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6946289379825005969}
+  - component: {fileID: 895149237634569674}
+  m_Layer: 0
+  m_Name: SummonController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6946289379825005969
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4494521174992490746}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &895149237634569674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4494521174992490746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4773b76947f1294eb44c4a8e31220bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiButtonManager: {fileID: 0}
+  summonUnits:
+  - {fileID: 6798815922429571797, guid: 9ca0536c717f50540be47dcb51dddfd6, type: 3}
+  - {fileID: 7071265079566448449, guid: 380e86d73df31554dbc1997d70a40ba1, type: 3}
+  - {fileID: 7071265079566448449, guid: 0b02a49a2ab87da46b6f52a8f4cb8a53, type: 3}
+  - {fileID: 7071265079566448449, guid: 584eef8cc0350c0499c85e70f7dc04d6, type: 3}
+  - {fileID: 6798815922429571797, guid: c986badedd23c794b8bacc61b646cee8, type: 3}
+  summonableTagName: ValidSummon
+  summonUnitIndex: 0
+  money: 250
+  passiveIncome: 0.015
+  Element_0_Cost: 75
+  Element_1_Cost: 50
+  Element_2_Cost: 200
+  Element_3_Cost: 100
+  Element_4_Cost: 125
