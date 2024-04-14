@@ -178,4 +178,5 @@ MonoBehaviour:
   speedMax: 6.5
   damage: 300
   SetSpeedBackInSeconds: 5
+  ExplosionParticle: {fileID: 4034926553108225224, guid: 2f036f8441dae2f4b8c5f99c08039268, type: 3}
   currentCollisions: []
