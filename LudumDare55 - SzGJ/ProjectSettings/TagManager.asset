@@ -9,6 +9,7 @@ TagManager:
   - Buttons
   - Summon
   - Bullet
+  - ValidSummon
   layers:
   - Default
   - TransparentFX
@@ -45,4 +46,22 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 2177166143
+    locked: 0
+  - name: ValidSummon
+    uniqueID: 547561727
+    locked: 0
+  - name: Tower
+    uniqueID: 1102877379
+    locked: 0
+  - name: Summon
+    uniqueID: 24849997
+    locked: 0
+  - name: Effects
+    uniqueID: 2337646081
+    locked: 0
+  - name: UI
+    uniqueID: 3374143181
     locked: 0

@@ -14,6 +14,7 @@ public class HealthTower : MonoBehaviour
 
         if(hitPoints <= 0)
         {
+            if (!this.gameObject.scene.isLoaded) return;
             Instantiate(TowerChunkRemain, this.transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
