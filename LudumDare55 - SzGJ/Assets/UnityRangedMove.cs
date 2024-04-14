@@ -8,7 +8,8 @@ public class UnityRangedMove : MonoBehaviour
     [SerializeField] private GameObject bulletPrefab;
     public float speedMax = 0.75f;
     public int damage = 25;
-    private Vector2 direction; //majd a sprite elforgatásához
+    private Vector2 direction;
+    private Vector2 direction_mouse;
     private GameObject[] AllTargets;
     private GameObject ClosestTarget;
 
@@ -29,6 +30,7 @@ public class UnityRangedMove : MonoBehaviour
         if (Input.GetMouseButton(1))
         {
             transform.position = Vector2.MoveTowards(transform.position, GameObject.Find("Main Camera").GetComponent<Camera>().ScreenToWorldPoint(Input.mousePosition), speed * Time.deltaTime);
+            GetFacingDirectionBasedOnMousePosition();
             return;
         }
         FindClosest();
@@ -38,9 +40,11 @@ public class UnityRangedMove : MonoBehaviour
             if (distanceFormTarget > targetingRange)
             {
                 transform.position = Vector2.MoveTowards(transform.position, ClosestTarget.transform.position, speed * Time.deltaTime);
+                GetFacingDirecetion();
             }
             else if (distanceFormTarget <= targetingRange && bulletsPerSecond < Time.time)
             {
+                GetFacingDirecetion();
                 timeUntilFire += Time.deltaTime;
                 if (timeUntilFire >= 1f / bulletsPerSecond)
                 {
@@ -100,13 +104,29 @@ public class UnityRangedMove : MonoBehaviour
             Gizmos.DrawWireSphere(transform.position, targetingRange);
         }
     }
-    /*
-    private void OnCollisionEnter2D(Collision2D other)
+    private void GetFacingDirecetion()
     {
-        if (other.collider.gameObject.tag == "Tower")
+        direction = new Vector2(ClosestTarget.transform.position.x - transform.position.x, ClosestTarget.transform.position.y - transform.position.y).normalized;
+        if (direction.x < 0.01f)
         {
-            other.gameObject.GetComponent<HealthTower>().TakeDamage(damage);
+            gameObject.transform.GetChild(0).localScale = new Vector3(-1f, 1f, 1f);
+        }
+        else if (direction.x > 0.01f)
+        {
+            gameObject.transform.GetChild(0).localScale = new Vector3(1f, 1f, 1f);
         }
     }
-    */
+
+    private void GetFacingDirectionBasedOnMousePosition()
+    {
+        direction_mouse = new Vector2(GameObject.Find("Main Camera").GetComponent<Camera>().ScreenToWorldPoint(Input.mousePosition).x - transform.position.x, GameObject.Find("Main Camera").GetComponent<Camera>().ScreenToWorldPoint(Input.mousePosition).y - transform.position.y).normalized;
+        if (direction_mouse.x < 0.01f)
+        {
+            gameObject.transform.GetChild(0).localScale = new Vector3(-1f, 1f, 1f);
+        }
+        else if (direction_mouse.x > 0.01f)
+        {
+            gameObject.transform.GetChild(0).localScale = new Vector3(1f, 1f, 1f);
+        }
+    }
 }
