@@ -8,7 +8,8 @@ public class UnitySuicideBomber : MonoBehaviour
     public float speedMax = 6.5f;
     public int damage = 300;
     public float SetSpeedBackInSeconds = 5f;
-    private Vector2 direction; //majd a sprite elforgatásához
+    private Vector2 direction;
+    private Vector2 direction_mouse;
     private GameObject[] AllTargets;
     private GameObject ClosestTarget;
     [SerializeField] GameObject ExplosionParticle;
@@ -27,12 +28,14 @@ public class UnitySuicideBomber : MonoBehaviour
         if (Input.GetMouseButton(1))
         {
             transform.position = Vector2.MoveTowards(transform.position, GameObject.Find("Main Camera").GetComponent<Camera>().ScreenToWorldPoint(Input.mousePosition), speed * Time.deltaTime);
+            GetFacingDirectionBasedOnMousePosition();
             return;
         }
         FindClosest();
         if (ClosestTarget != null)
         {
             transform.position = Vector2.MoveTowards(transform.position, ClosestTarget.transform.position, speed * Time.deltaTime);
+            GetFacingDirecetion();
         }
     }
     private void FindClosest()
@@ -84,7 +87,32 @@ public class UnitySuicideBomber : MonoBehaviour
             StartCoroutine(BeforeBoom(other));
         }
     }
-    IEnumerator BeforeBoom(Collision2D other)
+    private void GetFacingDirecetion()
+    {
+        direction = new Vector2(ClosestTarget.transform.position.x - transform.position.x, ClosestTarget.transform.position.y - transform.position.y).normalized;
+        if (direction.x < 0.01f)
+        {
+            gameObject.transform.GetChild(0).localScale = new Vector3(-1f, 1f, 1f);
+        }
+        else if (direction.x > 0.01f)
+        {
+            gameObject.transform.GetChild(0).localScale = new Vector3(1f, 1f, 1f);
+        }
+    }
+
+    private void GetFacingDirectionBasedOnMousePosition()
+    {
+        direction_mouse = new Vector2(GameObject.Find("Main Camera").GetComponent<Camera>().ScreenToWorldPoint(Input.mousePosition).x - transform.position.x, GameObject.Find("Main Camera").GetComponent<Camera>().ScreenToWorldPoint(Input.mousePosition).y - transform.position.y).normalized;
+        if (direction_mouse.x < 0.01f)
+        {
+            gameObject.transform.GetChild(0).localScale = new Vector3(-1f, 1f, 1f);
+        }
+        else if (direction_mouse.x > 0.01f)
+        {
+            gameObject.transform.GetChild(0).localScale = new Vector3(1f, 1f, 1f);
+        }
+    }
+        IEnumerator BeforeBoom(Collision2D other)
     {
         while (true)
         {
