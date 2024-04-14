@@ -6,6 +6,7 @@ public class HealthTower : MonoBehaviour
 {
     [Header("Attributes")]
     [SerializeField] private int hitPoints = 100;
+    [SerializeField] private GameObject TowerChunkRemain;
 
     public void TakeDamage(int dmg)
     {
@@ -13,6 +14,7 @@ public class HealthTower : MonoBehaviour
 
         if(hitPoints <= 0)
         {
+            Instantiate(TowerChunkRemain, this.transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
     }
