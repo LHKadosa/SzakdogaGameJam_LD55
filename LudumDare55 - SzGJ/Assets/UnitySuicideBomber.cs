@@ -16,6 +16,11 @@ public class UnitySuicideBomber : MonoBehaviour
 
     private float speed;
 
+    private void Start()
+    {
+        speed = speedMax;
+    }
+
     private void Update()
     {
         if (Input.GetMouseButton(1))
