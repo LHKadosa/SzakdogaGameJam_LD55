@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2238280948973101256}
-  - component: {fileID: 7370563217434865551}
   - component: {fileID: 5730448942834568860}
+  - component: {fileID: 7370563217434865551}
   - component: {fileID: 80999526076457199}
   - component: {fileID: -4076891791769108639}
   m_Layer: 0
@@ -37,6 +37,23 @@ Transform:
   - {fileID: 5412609790352052886}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5730448942834568860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1693028829437513322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c84f7723be78a142baeed214b9fd181, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 50
+  maxHealth: 50
+  TowerChunkRemain: {fileID: 1609036746236087250, guid: dbb88f3ca210bda45a868faccc14dd40, type: 3}
+  healthBar: {fileID: 7010712451831087190}
+  health: {fileID: 6911673554697645613}
 --- !u!114 &7370563217434865551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51,24 +68,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 2664831136143054358, guid: 0d780379c726b514aa443ac5365c7025, type: 3}
   targetingRange: 10
-  bulletsPerSecond: 1
---- !u!114 &5730448942834568860
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1693028829437513322}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c84f7723be78a142baeed214b9fd181, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hitPoints: 100
-  maxHealth: 0
-  TowerChunkRemain: {fileID: 1609036746236087250, guid: dbb88f3ca210bda45a868faccc14dd40, type: 3}
-  healthBar: {fileID: 7010712451831087190}
-  health: {fileID: 6911673554697645613}
+  bulletsPerSecond: 0.5
 --- !u!61 &80999526076457199
 BoxCollider2D:
   m_ObjectHideFlags: 0

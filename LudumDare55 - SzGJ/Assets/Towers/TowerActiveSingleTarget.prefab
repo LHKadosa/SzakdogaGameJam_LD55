@@ -275,8 +275,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2238280948973101256}
-  - component: {fileID: 7370563217434865551}
   - component: {fileID: 5730448942834568860}
+  - component: {fileID: 7370563217434865551}
   - component: {fileID: 80999526076457199}
   - component: {fileID: -8848428706543770232}
   m_Layer: 0
@@ -303,21 +303,6 @@ Transform:
   - {fileID: 5412609790352052886}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7370563217434865551
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1693028829437513322}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d2630643e834f44799529e662062b27, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 2664831136143054358, guid: af84926744744be439ee8fa505ffc8b9, type: 3}
-  targetingRange: 4
-  bulletsPerSecond: 1
 --- !u!114 &5730448942834568860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -335,6 +320,21 @@ MonoBehaviour:
   TowerChunkRemain: {fileID: 1609036746236087250, guid: dbb88f3ca210bda45a868faccc14dd40, type: 3}
   healthBar: {fileID: 1721634014036579598}
   health: {fileID: 1546300164431619010}
+--- !u!114 &7370563217434865551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1693028829437513322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d2630643e834f44799529e662062b27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 2664831136143054358, guid: af84926744744be439ee8fa505ffc8b9, type: 3}
+  targetingRange: 4
+  bulletsPerSecond: 3
 --- !u!61 &80999526076457199
 BoxCollider2D:
   m_ObjectHideFlags: 0

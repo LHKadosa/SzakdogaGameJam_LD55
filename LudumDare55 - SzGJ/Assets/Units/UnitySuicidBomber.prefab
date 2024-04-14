@@ -311,11 +311,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2214166017083035773}
-  - component: {fileID: 1898348106489356606}
   - component: {fileID: -6502955419739700944}
+  - component: {fileID: -3549994945385984233}
+  - component: {fileID: 1898348106489356606}
   - component: {fileID: 1571082863867859056}
   - component: {fileID: 2726535350378024902}
-  - component: {fileID: -3549994945385984233}
   m_Layer: 7
   m_Name: UnitySuicidBomber
   m_TagString: Summon
@@ -339,6 +339,39 @@ Transform:
   - {fileID: 3825749303028652842}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-6502955419739700944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7071265079566448449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62c9f20c1185c7b49b9c6d622fdfe04f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 10
+  hitPoints: 10
+  healthBar: {fileID: 7168800975206880233}
+  health: {fileID: 2583918817098849475}
+--- !u!114 &-3549994945385984233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7071265079566448449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87f1c30343fa71b4bb076044b28e97e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedMax: 4
+  damage: 300
+  SetSpeedBackInSeconds: 5
+  ExplosionParticle: {fileID: 4034926553108225224, guid: 2f036f8441dae2f4b8c5f99c08039268, type: 3}
+  currentCollisions: []
 --- !u!212 &1898348106489356606
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -391,22 +424,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &-6502955419739700944
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7071265079566448449}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62c9f20c1185c7b49b9c6d622fdfe04f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 100
-  hitPoints: 100
-  healthBar: {fileID: 7168800975206880233}
-  health: {fileID: 2583918817098849475}
 --- !u!70 &1571082863867859056
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -469,23 +486,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!114 &-3549994945385984233
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7071265079566448449}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87f1c30343fa71b4bb076044b28e97e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speedMax: 6.5
-  damage: 300
-  SetSpeedBackInSeconds: 5
-  ExplosionParticle: {fileID: 4034926553108225224, guid: 2f036f8441dae2f4b8c5f99c08039268, type: 3}
-  currentCollisions: []
 --- !u!1 &7306235540109311650
 GameObject:
   m_ObjectHideFlags: 0

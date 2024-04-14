@@ -199,8 +199,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c84f7723be78a142baeed214b9fd181, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPoints: 100
-  maxHealth: 100
+  hitPoints: 25
+  maxHealth: 25
   TowerChunkRemain: {fileID: 1609036746236087250, guid: dbb88f3ca210bda45a868faccc14dd40, type: 3}
   healthBar: {fileID: 4284873811499076470}
   health: {fileID: 9125950839440773175}

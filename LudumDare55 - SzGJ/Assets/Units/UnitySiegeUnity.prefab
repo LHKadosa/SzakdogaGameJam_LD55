@@ -236,11 +236,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2214166017083035773}
-  - component: {fileID: 1898348106489356606}
   - component: {fileID: -6502955419739700944}
+  - component: {fileID: -1220508225925193995}
+  - component: {fileID: 1898348106489356606}
   - component: {fileID: 1571082863867859056}
   - component: {fileID: 2726535350378024902}
-  - component: {fileID: -1220508225925193995}
   m_Layer: 7
   m_Name: UnitySiegeUnity
   m_TagString: Summon
@@ -264,6 +264,39 @@ Transform:
   - {fileID: 3357620509393895176}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-6502955419739700944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7071265079566448449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62c9f20c1185c7b49b9c6d622fdfe04f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 25
+  hitPoints: 25
+  healthBar: {fileID: 434050656559613736}
+  health: {fileID: 2677053058081645832}
+--- !u!114 &-1220508225925193995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7071265079566448449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aea5fc8f44201a1468d2af434f65be2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 2664831136143054358, guid: 09e059f3c3c3f17428ca4dce35503afc, type: 3}
+  speedMax: 0.5
+  damage: 50
+  targetingRange: 6
+  bulletsPerSecond: 0.5
 --- !u!212 &1898348106489356606
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -316,22 +349,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &-6502955419739700944
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7071265079566448449}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62c9f20c1185c7b49b9c6d622fdfe04f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 100
-  hitPoints: 100
-  healthBar: {fileID: 434050656559613736}
-  health: {fileID: 2677053058081645832}
 --- !u!70 &1571082863867859056
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -394,23 +411,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!114 &-1220508225925193995
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7071265079566448449}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aea5fc8f44201a1468d2af434f65be2c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 2664831136143054358, guid: 09e059f3c3c3f17428ca4dce35503afc, type: 3}
-  speedMax: 0.75
-  damage: 35
-  targetingRange: 8
-  bulletsPerSecond: 1
 --- !u!1 &7384340136846451063
 GameObject:
   m_ObjectHideFlags: 0

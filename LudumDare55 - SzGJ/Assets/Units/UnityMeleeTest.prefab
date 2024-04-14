@@ -395,8 +395,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5276561957686633308}
-  - component: {fileID: 7813070787407000766}
   - component: {fileID: 4731824893577920577}
+  - component: {fileID: 7813070787407000766}
   - component: {fileID: 2427106385573627178}
   - component: {fileID: 7999083495101133735}
   m_Layer: 7
@@ -423,22 +423,6 @@ Transform:
   - {fileID: 4921808362007480667}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7813070787407000766
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6798815922429571797}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8f38a83e9fa82144b47a9804f60fc04, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speedMax: 1
-  damage: 25
-  SetSpeedBackInSeconds: 5
-  HitTowerInSeconds: 0.5
 --- !u!114 &4731824893577920577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -455,6 +439,22 @@ MonoBehaviour:
   hitPoints: 100
   healthBar: {fileID: 4583116875830840744}
   health: {fileID: 2425901644805790445}
+--- !u!114 &7813070787407000766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6798815922429571797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8f38a83e9fa82144b47a9804f60fc04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedMax: 1
+  damage: 20
+  SetSpeedBackInSeconds: 5
+  HitTowerInSeconds: 0.5
 --- !u!70 &2427106385573627178
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
