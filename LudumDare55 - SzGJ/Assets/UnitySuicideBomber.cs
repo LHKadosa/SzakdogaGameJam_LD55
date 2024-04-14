@@ -11,6 +11,7 @@ public class UnitySuicideBomber : MonoBehaviour
     private Vector2 direction; //majd a sprite elforgatásához
     private GameObject[] AllTargets;
     private GameObject ClosestTarget;
+    [SerializeField] GameObject ExplosionParticle;
 
     public List<GameObject> currentCollisions = new List<GameObject>();
 
@@ -90,11 +91,12 @@ public class UnitySuicideBomber : MonoBehaviour
             if (ClosestTarget != null)
             {
                 gameObject.GetComponent<HealthSummon>().hitPoints = 5000;
-                yield return new WaitForSeconds(0.5f);
+                yield return new WaitForSeconds(0.2f);
                 foreach (GameObject item in currentCollisions)
                 {
                     item.gameObject.GetComponent<HealthTower>().TakeDamage(damage);
                 }
+                Instantiate(ExplosionParticle, this.transform.position, Quaternion.identity);
                 Destroy(this.gameObject);
             }
         }
