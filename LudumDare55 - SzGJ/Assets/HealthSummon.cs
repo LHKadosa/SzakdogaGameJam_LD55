@@ -9,12 +9,18 @@ public class HealthSummon : MonoBehaviour
 
     public Slider healthBar;
     public GameObject health;
+    private AudioManager audioManager;
 
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
     void Start()
     {
         health.SetActive(false);
         hitPoints = maxHealth;
         UpdateHealthBar();
+        audioManager.PlaySFX(audioManager.unitSpawnSfx);
     }
 
     public void TakeDamage(int damage)
@@ -38,6 +44,7 @@ public class HealthSummon : MonoBehaviour
 
     void Die()
     {
+        audioManager.PlaySFX(audioManager.unitDeathSfx);
         Destroy(gameObject);
     }
 

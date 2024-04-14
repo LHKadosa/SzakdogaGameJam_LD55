@@ -12,6 +12,7 @@ public class UnityRangedMove : MonoBehaviour
     private Vector2 direction_mouse;
     private GameObject[] AllTargets;
     private GameObject ClosestTarget;
+    private AudioManager audioManager;
 
     [SerializeField] private float targetingRange = 0.1f;
     [SerializeField] private float bulletsPerSecond = 1f;
@@ -19,6 +20,11 @@ public class UnityRangedMove : MonoBehaviour
 
     private float SetSpeedBackInSeconds = 5f;
     private float speed;
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
 
     private void Start()
     {
@@ -77,6 +83,7 @@ public class UnityRangedMove : MonoBehaviour
         GameObject bulletObj = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
         BulletSummon bulletScript = bulletObj.GetComponent<BulletSummon>();
         bulletScript.SetTarget(ClosestTarget.transform);
+        audioManager.PlaySFX(audioManager.rangedAttackSfx);
     }
 
     public void SlowDown()

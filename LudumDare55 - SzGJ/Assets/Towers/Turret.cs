@@ -15,6 +15,12 @@ public class Turret : MonoBehaviour
 
     GameObject ClosestTarget;
     private float timeUntilFire;
+    private AudioManager audioManager;
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
 
 
     private void Update(){
@@ -35,7 +41,8 @@ public class Turret : MonoBehaviour
 
     private void Shoot(){
         GameObject bulletObj = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
-        
+        audioManager.PlaySFX(audioManager.towerHitSfx);
+
         Bullet bulletScript = bulletObj.GetComponent<Bullet>();
         if(bulletScript!=null) bulletScript.SetTarget(ClosestTarget.transform);
 
