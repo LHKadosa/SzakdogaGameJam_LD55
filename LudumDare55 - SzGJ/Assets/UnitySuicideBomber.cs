@@ -80,7 +80,7 @@ public class UnitySuicideBomber : MonoBehaviour
         {
             this.gameObject.GetComponent<CapsuleCollider2D>().size = new Vector2(1f, 1f);
             currentCollisions.Add(other.gameObject);
-            Debug.Log(currentCollisions.Count);
+            //Debug.Log(currentCollisions.Count);
             StartCoroutine(BeforeBoom(other));
         }
     }

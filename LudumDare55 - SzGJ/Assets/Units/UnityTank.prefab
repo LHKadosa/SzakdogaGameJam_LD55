@@ -450,8 +450,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8f38a83e9fa82144b47a9804f60fc04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedMax: 1
-  damage: 20
+  speedMax: 0.5
+  damage: 5
   SetSpeedBackInSeconds: 5
   HitTowerInSeconds: 0.5
 --- !u!70 &2427106385573627178

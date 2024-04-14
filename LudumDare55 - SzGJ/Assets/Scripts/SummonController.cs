@@ -54,4 +54,9 @@ public class SummonController: MonoBehaviour
             }
         }
     }
+
+    public void addMoney(int moneyToAdd)
+    {
+        money += moneyToAdd;
+    }
 }

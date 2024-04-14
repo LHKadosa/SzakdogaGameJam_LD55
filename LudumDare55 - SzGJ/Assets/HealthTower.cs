@@ -3,16 +3,22 @@ using UnityEngine;
 
 public class HealthTower : MonoBehaviour
 {
+    
+
     [Header("Attributes")]
     [SerializeField] private float maxHealth;
     [SerializeField] private GameObject TowerChunkRemain;
+    [SerializeField] private int moneyAfterDeath;
 
     private float hitPoints;
+    private SummonController sc;
 
     public Slider healthBar;
     public GameObject health;
+
     void Start()
     {
+        sc = GameObject.Find("SummonController").GetComponent<SummonController>();
         health.SetActive(false);
         hitPoints = maxHealth;
         UpdateHealthBar();
@@ -26,6 +32,7 @@ public class HealthTower : MonoBehaviour
 
         if (hitPoints < maxHealth)
         {
+            if (!this.gameObject.scene.isLoaded) return;
             health.SetActive(true);
         }
 
@@ -43,6 +50,7 @@ public class HealthTower : MonoBehaviour
     void Die()
     {
         if (!this.gameObject.scene.isLoaded) return;
+        sc.addMoney(moneyAfterDeath);
         Instantiate(TowerChunkRemain, this.transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
