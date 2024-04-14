@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class SummonController: MonoBehaviour
 {
+    public UiButtonManager uiButtonManager;
     public GameObject[] summonUnits;
     public string summonableTagName;
     public int summonUnitIndex = 0;
@@ -9,6 +10,7 @@ public class SummonController: MonoBehaviour
 
     void Update()
     {
+        /*
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             summonUnitIndex = 0;
@@ -28,7 +30,7 @@ public class SummonController: MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.Alpha5))
         {
             summonUnitIndex = 4;
-        }
+        }*/
 
         if (Input.GetMouseButtonDown(0))
         {
@@ -58,5 +60,11 @@ public class SummonController: MonoBehaviour
     public void addMoney(int moneyToAdd)
     {
         money += moneyToAdd;
+    }
+
+    public void setSummonUnitIndex(int newIndex)
+    {
+        summonUnitIndex = newIndex;
+        uiButtonManager.showSelection(newIndex);
     }
 }
