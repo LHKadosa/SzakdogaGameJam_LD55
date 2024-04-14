@@ -7,7 +7,8 @@ public class SummonController: MonoBehaviour
     public GameObject[] summonUnits;
     public string summonableTagName;
     public int summonUnitIndex = 0;
-    public int money = 100;
+    public float money = 100;
+    public float passiveIncome = 0.1f;
 
     [Header("Summon Units Cost")]
     public int Element_0_Cost;
@@ -39,6 +40,9 @@ public class SummonController: MonoBehaviour
         {
             summonUnitIndex = 4;
         }*/
+
+        money += passiveIncome;
+        resetMoneyText();
 
         if (Input.GetMouseButtonDown(0))
         {
@@ -94,6 +98,7 @@ public class SummonController: MonoBehaviour
 
     private void resetMoneyText()
     {
-        uiButtonManager.moneyText.text = money.ToString();
+        int intMoney = (int) money;
+        uiButtonManager.moneyText.text = intMoney.ToString();
     }
 }

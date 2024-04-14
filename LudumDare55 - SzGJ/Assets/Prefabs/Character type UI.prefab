@@ -483,7 +483,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 100
+  m_text: 50
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7ccb44d7db0bd9a4094758847315b446, type: 2}
   m_sharedMaterial: {fileID: 3693390205113560429, guid: 7ccb44d7db0bd9a4094758847315b446, type: 2}
@@ -826,7 +826,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 100
+  m_text: 200
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7ccb44d7db0bd9a4094758847315b446, type: 2}
   m_sharedMaterial: {fileID: 3693390205113560429, guid: 7ccb44d7db0bd9a4094758847315b446, type: 2}
@@ -960,7 +960,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 100
+  m_text: 250
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7ccb44d7db0bd9a4094758847315b446, type: 2}
   m_sharedMaterial: {fileID: 3693390205113560429, guid: 7ccb44d7db0bd9a4094758847315b446, type: 2}
@@ -1119,7 +1119,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &7271835271996405939
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1830,7 +1830,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 100
+  m_text: 300
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7ccb44d7db0bd9a4094758847315b446, type: 2}
   m_sharedMaterial: {fileID: 3693390205113560429, guid: 7ccb44d7db0bd9a4094758847315b446, type: 2}
