@@ -14353,51 +14353,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c512419da2342a4d9ca2818fed596bc, type: 3}
---- !u!1 &212143546
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 212143548}
-  - component: {fileID: 212143547}
-  m_Layer: 0
-  m_Name: Wincondition
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &212143547
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 212143546}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9afb8d98da4b33f46a9b56f0e90f909f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NumberOfTowers: 0
---- !u!4 &212143548
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 212143546}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.523202, y: 0.8097633, z: -0.121741146}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &225082151
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15863,40 +15818,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4773b76947f1294eb44c4a8e31220bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
-=======
-  uiButtonManager: {fileID: 1524218168}
-  summonUnits:
-  - {fileID: 6798815922429571797, guid: 9ca0536c717f50540be47dcb51dddfd6, type: 3}
-  - {fileID: 7071265079566448449, guid: 380e86d73df31554dbc1997d70a40ba1, type: 3}
-  - {fileID: 7071265079566448449, guid: 0b02a49a2ab87da46b6f52a8f4cb8a53, type: 3}
-  - {fileID: 7071265079566448449, guid: 584eef8cc0350c0499c85e70f7dc04d6, type: 3}
-  - {fileID: 6798815922429571797, guid: c986badedd23c794b8bacc61b646cee8, type: 3}
-  summonableTagName: ValidSummon
-  summonUnitIndex: 0
-  money: 100
-  passiveIncome: 0.1
-  Element_0_Cost: 50
-  Element_1_Cost: 100
-  Element_2_Cost: 200
-  Element_3_Cost: 300
-  Element_4_Cost: 250
---- !u!4 &330473537
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 330473535}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
->>>>>>> c1d0d1eacf43678e106493925e57a90c956dc7c3
 --- !u!1 &443732480
 GameObject:
   m_ObjectHideFlags: 0
@@ -27372,4 +27293,3 @@ SceneRoots:
   - {fileID: 1479997760}
   - {fileID: 1380544087}
   - {fileID: 713680562}
-  - {fileID: 212143548}
