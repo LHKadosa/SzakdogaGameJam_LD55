@@ -3,8 +3,6 @@ using UnityEngine;
 
 public class HealthTower : MonoBehaviour
 {
-    
-
     [Header("Attributes")]
     [SerializeField] private float maxHealth;
     [SerializeField] private GameObject TowerChunkRemain;
@@ -16,12 +14,15 @@ public class HealthTower : MonoBehaviour
     public Slider healthBar;
     public GameObject health;
 
+    [SerializeField] private GameObject WinCondition;
+
     void Start()
     {
         sc = GameObject.Find("SummonController").GetComponent<SummonController>();
         health.SetActive(false);
         hitPoints = maxHealth;
         UpdateHealthBar();
+        WinCondition = GameObject.Find("Wincondition");
     }
 
     public void TakeDamage(int dmg)
@@ -49,6 +50,7 @@ public class HealthTower : MonoBehaviour
 
     void Die()
     {
+        WinCondition.GetComponent<WinCon>().CheckTowerNumber();
         if (!this.gameObject.scene.isLoaded) return;
         sc.addMoney(moneyAfterDeath);
         Instantiate(TowerChunkRemain, this.transform.position, Quaternion.identity);

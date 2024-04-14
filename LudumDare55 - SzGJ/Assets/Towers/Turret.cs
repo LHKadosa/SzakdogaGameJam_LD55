@@ -13,6 +13,8 @@ public class Turret : MonoBehaviour
     [SerializeField] private float targetingRange = 5f;
     [SerializeField] private float bulletsPerSecond = 1f;
 
+    [SerializeField] private GameObject WinCondition; 
+
     GameObject ClosestTarget;
     private float timeUntilFire;
     private AudioManager audioManager;
