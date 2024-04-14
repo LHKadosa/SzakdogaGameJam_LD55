@@ -90,7 +90,7 @@ public class UnitySuicideBomber : MonoBehaviour
         {
             if (ClosestTarget != null)
             {
-                gameObject.GetComponent<HealthSummon>().hitPoints = 5000;
+                gameObject.GetComponent<HealthSummon>().setHealth(5000);
                 yield return new WaitForSeconds(0.2f);
                 foreach (GameObject item in currentCollisions)
                 {

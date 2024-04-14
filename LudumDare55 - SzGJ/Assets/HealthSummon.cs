@@ -5,7 +5,7 @@ public class HealthSummon : MonoBehaviour
 {
     [Header("Attributes")]
     public float maxHealth;
-    public float hitPoints;
+    private float hitPoints;
 
     public Slider healthBar;
     public GameObject health;
@@ -39,5 +39,10 @@ public class HealthSummon : MonoBehaviour
     void Die()
     {
         Destroy(gameObject);
+    }
+
+    public void setHealth(int newHealth)
+    {
+        hitPoints = newHealth;
     }
 }

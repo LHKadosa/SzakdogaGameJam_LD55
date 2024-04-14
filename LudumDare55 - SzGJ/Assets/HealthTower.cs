@@ -4,9 +4,10 @@ using UnityEngine;
 public class HealthTower : MonoBehaviour
 {
     [Header("Attributes")]
-    [SerializeField] private float hitPoints;
     [SerializeField] private float maxHealth;
     [SerializeField] private GameObject TowerChunkRemain;
+
+    private float hitPoints;
 
     public Slider healthBar;
     public GameObject health;
