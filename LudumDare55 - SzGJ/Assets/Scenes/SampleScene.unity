@@ -393,6 +393,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4072781448930316136, guid: 5aab09c3f0c0e3f46a76432b5ceac5c3, type: 3}
+      propertyPath: m_Name
+      value: Graphics
+      objectReference: {fileID: 0}
     - target: {fileID: 7071265079566448449, guid: 5aab09c3f0c0e3f46a76432b5ceac5c3, type: 3}
       propertyPath: m_Name
       value: UnityMeleeTest
@@ -400,8 +404,37 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4072781448930316136, guid: 5aab09c3f0c0e3f46a76432b5ceac5c3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 983817154}
   m_SourcePrefab: {fileID: 100100000, guid: 5aab09c3f0c0e3f46a76432b5ceac5c3, type: 3}
+--- !u!1 &983817151 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4072781448930316136, guid: 5aab09c3f0c0e3f46a76432b5ceac5c3, type: 3}
+  m_PrefabInstance: {fileID: 651426195}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &983817154
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983817151}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 30b38d2ba5dd5534c8e8b6122fc63861, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1388465651
 PrefabInstance:
   m_ObjectHideFlags: 0

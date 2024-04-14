@@ -1,19 +1,43 @@
-using System.Collections;
-using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class HealthSummon : MonoBehaviour
 {
     [Header("Attributes")]
-    [SerializeField] public int hitPoints = 100;
+    public float maxHealth;
+    public float hitPoints;
 
-    public void TakeDamage(int dmg)
+    public Slider healthBar;
+    public GameObject health;
+
+    void Start()
     {
-        hitPoints -= dmg;
+        health.SetActive(false);
+        hitPoints = maxHealth;
+        UpdateHealthBar();
+    }
 
-        if(hitPoints <= 0)
+    public void TakeDamage(int damage)
+    {
+        hitPoints -= damage;
+
+        UpdateHealthBar();
+
+        if (hitPoints < maxHealth)
         {
-            Destroy(gameObject);
+            health.SetActive(true);
         }
+
+        if (hitPoints <= 0) { Die(); }
+    }
+
+    void UpdateHealthBar()
+    {
+        healthBar.value = Mathf.Clamp(hitPoints / maxHealth, 0, 1);
+    }
+
+    void Die()
+    {
+        Destroy(gameObject);
     }
 }
