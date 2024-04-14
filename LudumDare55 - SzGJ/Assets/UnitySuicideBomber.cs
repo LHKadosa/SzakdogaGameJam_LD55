@@ -94,7 +94,10 @@ public class UnitySuicideBomber : MonoBehaviour
                 yield return new WaitForSeconds(0.2f);
                 foreach (GameObject item in currentCollisions)
                 {
-                    item.gameObject.GetComponent<HealthTower>().TakeDamage(damage);
+                    if (item != null)
+                    {
+                        item.gameObject.GetComponent<HealthTower>().TakeDamage(damage);
+                    }
                 }
                 Instantiate(ExplosionParticle, this.transform.position, Quaternion.identity);
                 Destroy(this.gameObject);
