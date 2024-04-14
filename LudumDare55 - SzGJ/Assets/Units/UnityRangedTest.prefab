@@ -427,7 +427,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 50
-  hitPoints: 50
   healthBar: {fileID: 2770664051895245433}
   health: {fileID: 4621231215352901614}
 --- !u!114 &-1220508225925193995

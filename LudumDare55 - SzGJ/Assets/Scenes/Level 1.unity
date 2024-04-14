@@ -16617,9 +16617,10 @@ MonoBehaviour:
   - {fileID: 7071265079566448449, guid: 380e86d73df31554dbc1997d70a40ba1, type: 3}
   - {fileID: 7071265079566448449, guid: 0b02a49a2ab87da46b6f52a8f4cb8a53, type: 3}
   - {fileID: 7071265079566448449, guid: 584eef8cc0350c0499c85e70f7dc04d6, type: 3}
-  - {fileID: 7071265079566448449, guid: 6c5d730c627ce8c439987e80d6477cff, type: 3}
+  - {fileID: 6798815922429571797, guid: c986badedd23c794b8bacc61b646cee8, type: 3}
   summonableTagName: ValidSummon
   summonUnitIndex: 0
+  money: 100
 --- !u!4 &330473537
 Transform:
   m_ObjectHideFlags: 0

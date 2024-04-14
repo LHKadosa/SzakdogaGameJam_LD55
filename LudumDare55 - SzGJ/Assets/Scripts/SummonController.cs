@@ -5,6 +5,7 @@ public class SummonController: MonoBehaviour
     public GameObject[] summonUnits;
     public string summonableTagName;
     public int summonUnitIndex = 0;
+    public int money = 100;
 
     void Update()
     {
