@@ -10,6 +10,7 @@ TagManager:
   - Summon
   - Bullet
   - ValidSummon
+  - Audio
   layers:
   - Default
   - TransparentFX

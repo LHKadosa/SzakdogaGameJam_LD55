@@ -13,8 +13,14 @@ public class UnityMeleeMove : MonoBehaviour
     private Vector2 direction_mouse;
     private GameObject[] AllTargets;
     private GameObject ClosestTarget;
+    private AudioManager audioManager;
 
     private float speed;
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
 
     private void Start()
     {
@@ -81,6 +87,7 @@ public class UnityMeleeMove : MonoBehaviour
     {
         if (other.collider.gameObject.tag == "Tower")
         {
+            audioManager.PlaySFX(audioManager.meleeAttackSfx);
             other.gameObject.GetComponent<HealthTower>().TakeDamage(damage);
             this.transform.position -= (other.transform.position - this.transform.position);
         }

@@ -12,11 +12,17 @@ public class UnitySuicideBomber : MonoBehaviour
     private Vector2 direction_mouse;
     private GameObject[] AllTargets;
     private GameObject ClosestTarget;
+    private AudioManager audioManager;
     [SerializeField] GameObject ExplosionParticle;
 
     public List<GameObject> currentCollisions = new List<GameObject>();
 
     private float speed;
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
 
     private void Start()
     {
@@ -120,6 +126,7 @@ public class UnitySuicideBomber : MonoBehaviour
             {
                 gameObject.GetComponent<HealthSummon>().setHealth(5000);
                 yield return new WaitForSeconds(0.2f);
+                audioManager.PlaySFX(audioManager.suicideAttackSfx);
                 foreach (GameObject item in currentCollisions)
                 {
                     if (item != null)
