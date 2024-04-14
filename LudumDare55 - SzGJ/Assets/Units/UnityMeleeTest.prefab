@@ -112,6 +112,7 @@ GameObject:
   m_Component:
   - component: {fileID: 855853837268380695}
   - component: {fileID: 754667900636414114}
+  - component: {fileID: 586652537781985620}
   m_Layer: 7
   m_Name: Grafics
   m_TagString: Untagged
@@ -186,6 +187,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &586652537781985620
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1858790362282078842}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 30b38d2ba5dd5534c8e8b6122fc63861, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2425901644805790445
 GameObject:
   m_ObjectHideFlags: 0
@@ -436,7 +458,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
-  hitPoints: 100
   healthBar: {fileID: 4583116875830840744}
   health: {fileID: 2425901644805790445}
 --- !u!114 &7813070787407000766
