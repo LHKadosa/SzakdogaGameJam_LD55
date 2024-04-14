@@ -16690,6 +16690,11 @@ MonoBehaviour:
   summonableTagName: ValidSummon
   summonUnitIndex: 0
   money: 100
+  Element_0_Cost: 100
+  Element_1_Cost: 100
+  Element_2_Cost: 100
+  Element_3_Cost: 100
+  Element_4_Cost: 100
 --- !u!4 &330473537
 Transform:
   m_ObjectHideFlags: 0
