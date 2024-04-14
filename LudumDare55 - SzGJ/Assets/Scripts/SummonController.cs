@@ -69,6 +69,7 @@ public class SummonController: MonoBehaviour
     public void addMoney(int moneyToAdd)
     {
         money += moneyToAdd;
+        resetMoneyText();
     }
 
     public void setSummonUnitIndex(int newIndex)
@@ -81,13 +82,18 @@ public class SummonController: MonoBehaviour
     {
         switch (index)
         {
-            case 0: if (money - Element_0_Cost >= 0) { money -= Element_0_Cost; return true; } break;
-            case 1: if (money - Element_1_Cost >= 0) { money -= Element_1_Cost; return true; } break;
-            case 2: if (money - Element_2_Cost >= 0) { money -= Element_2_Cost; return true; } break;
-            case 3: if (money - Element_3_Cost >= 0) { money -= Element_3_Cost; return true; } break;
-            case 4: if (money - Element_4_Cost >= 0) { money -= Element_4_Cost; return true; } break;
+            case 0: if (money - Element_0_Cost >= 0) { money -= Element_0_Cost; resetMoneyText(); return true; } break;
+            case 1: if (money - Element_1_Cost >= 0) { money -= Element_1_Cost; resetMoneyText(); return true; } break;
+            case 2: if (money - Element_2_Cost >= 0) { money -= Element_2_Cost; resetMoneyText(); return true; } break;
+            case 3: if (money - Element_3_Cost >= 0) { money -= Element_3_Cost; resetMoneyText(); return true; } break;
+            case 4: if (money - Element_4_Cost >= 0) { money -= Element_4_Cost; resetMoneyText(); return true; } break;
         }
 
         return false;
+    }
+
+    private void resetMoneyText()
+    {
+        uiButtonManager.moneyText.text = money.ToString();
     }
 }

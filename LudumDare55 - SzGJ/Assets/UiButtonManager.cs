@@ -1,16 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class UiButtonManager : MonoBehaviour
 {
-    [Header("References")]
-    [SerializeField] Image Image_0;
-    [SerializeField] Image Image_1;
-    [SerializeField] Image Image_2;
-    [SerializeField] Image Image_3;
-    [SerializeField] Image Image_4;
+    public TextMeshProUGUI moneyText;
+
+    [Header("Image references")]
+    [SerializeField] private Image Image_0;
+    [SerializeField] private Image Image_1;
+    [SerializeField] private Image Image_2;
+    [SerializeField] private Image Image_3;
+    [SerializeField] private Image Image_4;
 
     public void showSelection(int index)
     {
