@@ -13,6 +13,7 @@ public class UnityRangedMove : MonoBehaviour
     private GameObject[] AllTargets;
     private GameObject ClosestTarget;
     private AudioManager audioManager;
+    [SerializeField] private Animator animator;
 
     [SerializeField] private float targetingRange = 0.1f;
     [SerializeField] private float bulletsPerSecond = 1f;
@@ -84,6 +85,7 @@ public class UnityRangedMove : MonoBehaviour
         BulletSummon bulletScript = bulletObj.GetComponent<BulletSummon>();
         bulletScript.SetTarget(ClosestTarget.transform);
         audioManager.PlaySFX(audioManager.rangedAttackSfx);
+        StartCoroutine(AttackAnimTimer());
     }
 
     public void SlowDown()
@@ -135,5 +137,11 @@ public class UnityRangedMove : MonoBehaviour
         {
             gameObject.transform.GetChild(0).localScale = new Vector3(1f, 1f, 1f);
         }
+    }
+    IEnumerator AttackAnimTimer()
+    {
+        animator.SetBool("Attack", true);
+        yield return new WaitForSeconds(0.25f);
+        animator.SetBool("Attack", false);
     }
 }

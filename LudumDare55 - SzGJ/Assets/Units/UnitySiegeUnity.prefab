@@ -400,6 +400,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2664831136143054358, guid: 09e059f3c3c3f17428ca4dce35503afc, type: 3}
   speedMax: 0.5
   damage: 50
+  animator: {fileID: 207208549952323172}
   targetingRange: 6
   bulletsPerSecond: 0.5
 --- !u!70 &1571082863867859056

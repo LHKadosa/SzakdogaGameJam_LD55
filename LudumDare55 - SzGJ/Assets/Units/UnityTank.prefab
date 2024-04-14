@@ -476,6 +476,7 @@ MonoBehaviour:
   damage: 5
   SetSpeedBackInSeconds: 5
   HitTowerInSeconds: 0.5
+  animator: {fileID: 223490841328222067}
 --- !u!70 &2427106385573627178
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

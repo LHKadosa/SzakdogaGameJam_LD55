@@ -14,6 +14,7 @@ public class UnityMeleeMove : MonoBehaviour
     private GameObject[] AllTargets;
     private GameObject ClosestTarget;
     private AudioManager audioManager;
+    [SerializeField] private Animator animator;
 
     private float speed;
 
@@ -88,6 +89,7 @@ public class UnityMeleeMove : MonoBehaviour
         if (other.collider.gameObject.tag == "Tower")
         {
             audioManager.PlaySFX(audioManager.meleeAttackSfx);
+            StartCoroutine(AttackAnimTimer());
             other.gameObject.GetComponent<HealthTower>().TakeDamage(damage);
             this.transform.position -= (other.transform.position - this.transform.position);
         }
@@ -117,5 +119,11 @@ public class UnityMeleeMove : MonoBehaviour
         {
             gameObject.transform.GetChild(0).localScale = new Vector3(1f, 1f, 1f);
         }
+    }
+    IEnumerator AttackAnimTimer()
+    {
+        animator.SetBool("Attack", true);
+        yield return new WaitForSeconds(0.25f);
+        animator.SetBool("Attack", false);
     }
 }
