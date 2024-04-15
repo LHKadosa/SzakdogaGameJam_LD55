@@ -21451,6 +21451,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 895149237634569674, guid: a7dadb2db66fe5647b867cfb10c15174, type: 3}
+      propertyPath: money
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 895149237634569674, guid: a7dadb2db66fe5647b867cfb10c15174, type: 3}
       propertyPath: uiButtonManager
       value: 
       objectReference: {fileID: 1524218168}

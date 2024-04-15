@@ -320,6 +320,7 @@ MonoBehaviour:
   moneyAfterDeath: 150
   healthBar: {fileID: 1721634014036579598}
   health: {fileID: 1546300164431619010}
+  WinCondition: {fileID: 0}
 --- !u!114 &7370563217434865551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -332,9 +333,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d2630643e834f44799529e662062b27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 2664831136143054358, guid: af84926744744be439ee8fa505ffc8b9, type: 3}
+  bulletPrefab: {fileID: 2664831136143054358, guid: 6a4df53c46a739247a84010f91fba33b, type: 3}
   targetingRange: 5
   bulletsPerSecond: 3
+  WinCondition: {fileID: 0}
 --- !u!61 &80999526076457199
 BoxCollider2D:
   m_ObjectHideFlags: 0

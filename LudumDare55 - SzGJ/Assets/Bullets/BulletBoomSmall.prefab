@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3916466954310447290}
   - component: {fileID: 4271621706239234839}
   m_Layer: 6
-  m_Name: BulletBoom
+  m_Name: BulletBoomSmall
   m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayer: 7
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.94509804, g: 0.48435012, b: 0.031372547, a: 1}
+  m_Color: {r: 1, g: 0.9724102, b: 0.1745283, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -162,6 +162,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 3916466954310447290}
-  bulletSpeed: 1.5
-  bulletDamage: 50
-  boomRange: 2
+  bulletSpeed: 3
+  bulletDamage: 5
+  boomRange: 0.75

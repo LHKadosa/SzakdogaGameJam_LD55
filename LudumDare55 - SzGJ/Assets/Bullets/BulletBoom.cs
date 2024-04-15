@@ -10,7 +10,7 @@ public class BulletBoom : MonoBehaviour
     [Header("Attribute")]
     [SerializeField] private float bulletSpeed = 5f;
     [SerializeField] private int bulletDamage = 1;
-    [SerializeField] private int boomRange = 5;
+    [SerializeField] private float boomRange = 5;
 
     private Transform target;
     private float DestroySelfInSeconds = 5f;

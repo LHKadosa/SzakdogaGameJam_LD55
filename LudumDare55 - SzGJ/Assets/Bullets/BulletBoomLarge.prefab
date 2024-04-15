@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 2232236309030588279}
   - component: {fileID: 2215529501982832436}
   - component: {fileID: 3916466954310447290}
-  - component: {fileID: -4001570345559258109}
+  - component: {fileID: 4271621706239234839}
   m_Layer: 6
-  m_Name: BulletSlow
+  m_Name: BulletBoomLarge
   m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayer: 7
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.3823751, g: 0.9529412, b: 0.3647059, a: 1}
+  m_Color: {r: 0.94509804, g: 0.48435012, b: 0.031372547, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -149,7 +149,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!114 &-4001570345559258109
+--- !u!114 &4271621706239234839
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -158,8 +158,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2664831136143054358}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 272517d54a06154418d0452bc60272fa, type: 3}
+  m_Script: {fileID: 11500000, guid: a1000e2b70f612d4c8e656a9756e74d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 3916466954310447290}
-  bulletSpeed: 5
+  bulletSpeed: 1.5
+  bulletDamage: 50
+  boomRange: 2
