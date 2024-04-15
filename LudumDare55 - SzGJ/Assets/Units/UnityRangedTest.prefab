@@ -607,6 +607,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 2664831136143054358, guid: 09e059f3c3c3f17428ca4dce35503afc, type: 3}
   speedMax: 1.5
+  grafics: {fileID: 7732186059260003658}
+  frozenColor: {r: 0.20392157, g: 0.64705884, b: 0.8509804, a: 1}
   animator: {fileID: 3135620994944405781}
   targetingRange: 2.5
   bulletsPerSecond: 1

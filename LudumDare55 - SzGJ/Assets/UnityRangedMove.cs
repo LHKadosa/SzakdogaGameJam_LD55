@@ -12,6 +12,9 @@ public class UnityRangedMove : MonoBehaviour
     private Vector2 direction_mouse;
     private GameObject[] AllTargets;
     private GameObject ClosestTarget;
+    public GameObject grafics;
+    private SpriteRenderer spriteRenderer;
+    public Color frozenColor;
     private AudioManager audioManager;
     [SerializeField] private Animator animator;
 
@@ -25,6 +28,7 @@ public class UnityRangedMove : MonoBehaviour
     private void Awake()
     {
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+        spriteRenderer = grafics.GetComponent<SpriteRenderer>();
     }
 
     private void Start()
@@ -91,6 +95,7 @@ public class UnityRangedMove : MonoBehaviour
     public void SlowDown()
     {
         speed = speedMax / 4; //Valami idözitövel vissza lehetne majd állítani
+        spriteRenderer.color = frozenColor;
         StartCoroutine(setSpeedBack());
     }
     IEnumerator setSpeedBack()
@@ -99,6 +104,7 @@ public class UnityRangedMove : MonoBehaviour
         {
             yield return new WaitForSeconds(SetSpeedBackInSeconds);
             speed = speedMax;
+            spriteRenderer.color = Color.white;
         }
     }
 
