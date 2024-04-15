@@ -448,9 +448,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87f1c30343fa71b4bb076044b28e97e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedMax: 4
+  speedMax: 3
   damage: 300
   SetSpeedBackInSeconds: 5
+  grafics: {fileID: 7943484570778299079}
+  frozenColor: {r: 0.20392157, g: 0.64705884, b: 0.8509804, a: 1}
   ExplosionParticle: {fileID: 4034926553108225224, guid: 2f036f8441dae2f4b8c5f99c08039268, type: 3}
   currentCollisions: []
 --- !u!70 &1571082863867859056

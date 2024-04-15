@@ -556,10 +556,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8f38a83e9fa82144b47a9804f60fc04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedMax: 0.5
+  speedMax: 0.7
   damage: 5
   SetSpeedBackInSeconds: 5
   HitTowerInSeconds: 0.5
+  grafics: {fileID: 1858790362282078842}
+  frozenColor: {r: 0.20392157, g: 0.64705884, b: 0.8509804, a: 1}
   animator: {fileID: 223490841328222067}
 --- !u!70 &2427106385573627178
 CapsuleCollider2D:
