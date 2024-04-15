@@ -1119,7 +1119,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &7271835271996405939
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1155,6 +1155,9 @@ MonoBehaviour:
   Image_2: {fileID: 1527750318075252258}
   Image_3: {fileID: 8598349721457355567}
   Image_4: {fileID: 6120085489624717761}
+  Imafe_Face_Normal: {fileID: 0}
+  Imafe_Face_Happy: {fileID: 0}
+  Imafe_Face_Sad: {fileID: 0}
 --- !u!1 &5640506281591887953
 GameObject:
   m_ObjectHideFlags: 0
