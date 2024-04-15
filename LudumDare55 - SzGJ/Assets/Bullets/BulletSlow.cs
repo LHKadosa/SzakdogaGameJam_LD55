@@ -29,6 +29,7 @@ public class BulletSlow : MonoBehaviour
         Vector2 direction = (target.position - transform.position).normalized;
 
         rb.velocity = direction * bulletSpeed;
+        ChangeSpriteOnBullet();
     }
 
     private void OnCollisionEnter2D(Collision2D other)
@@ -40,6 +41,13 @@ public class BulletSlow : MonoBehaviour
             if (other.gameObject.GetComponent<UnitySuicideBomber>() != null) other.gameObject.GetComponent<UnitySuicideBomber>().SlowDown();
             Destroy(gameObject);
         }
+    }
+    private void ChangeSpriteOnBullet()
+    {
+        Vector3 vectorToTarget = target.position - transform.position;
+        float angle = Mathf.Atan2(vectorToTarget.y, vectorToTarget.x) * Mathf.Rad2Deg;
+        Quaternion q = Quaternion.AngleAxis(angle + 180, Vector3.forward);
+        transform.rotation = Quaternion.Slerp(transform.rotation, q, Time.deltaTime);
     }
     IEnumerator DestroyBulletAfterSeconds()
     {
