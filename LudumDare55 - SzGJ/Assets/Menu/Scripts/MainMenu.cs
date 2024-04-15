@@ -4,8 +4,14 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
-    public void playGame()
+    public void LoadLevel1()
     {
         SceneManager.LoadSceneAsync(1); 
+    }    public void LoadLevel2()
+    {
+        SceneManager.LoadSceneAsync(2); 
+    }    public void LoadLevel3()
+    {
+        SceneManager.LoadSceneAsync(3); 
     }
 }
