@@ -118,7 +118,7 @@ public class UnitySuicideBomber : MonoBehaviour
             gameObject.transform.GetChild(0).localScale = new Vector3(1f, 1f, 1f);
         }
     }
-        IEnumerator BeforeBoom(Collision2D other)
+    IEnumerator BeforeBoom(Collision2D other)
     {
         while (true)
         {

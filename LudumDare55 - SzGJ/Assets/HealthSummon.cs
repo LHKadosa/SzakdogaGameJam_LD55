@@ -10,6 +10,7 @@ public class HealthSummon : MonoBehaviour
     public Slider healthBar;
     public GameObject health;
     private AudioManager audioManager;
+    private SummonController sc;
 
     private void Awake()
     {
@@ -17,6 +18,7 @@ public class HealthSummon : MonoBehaviour
     }
     void Start()
     {
+        sc = GameObject.Find("SummonController").GetComponent<SummonController>();
         health.SetActive(false);
         hitPoints = maxHealth;
         UpdateHealthBar();
@@ -44,6 +46,7 @@ public class HealthSummon : MonoBehaviour
 
     void Die()
     {
+        sc.uiButtonManager.beSad();
         audioManager.PlaySFX(audioManager.unitDeathSfx);
         Destroy(gameObject);
     }

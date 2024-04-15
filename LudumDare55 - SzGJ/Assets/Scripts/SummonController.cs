@@ -74,6 +74,7 @@ public class SummonController: MonoBehaviour
     {
         money += moneyToAdd;
         resetMoneyText();
+        uiButtonManager.beHappy();
     }
 
     public void setSummonUnitIndex(int newIndex)

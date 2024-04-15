@@ -15,6 +15,11 @@ public class UiButtonManager : MonoBehaviour
     [SerializeField] private Image Image_3;
     [SerializeField] private Image Image_4;
 
+    [Header("Face references")]
+    [SerializeField] private Image Imafe_Face_Normal;
+    [SerializeField] private Image Imafe_Face_Happy;
+    [SerializeField] private Image Imafe_Face_Sad;
+
     public void showSelection(int index)
     {
         //Debug.Log(index);
@@ -33,5 +38,35 @@ public class UiButtonManager : MonoBehaviour
             case 3: Image_3.color = new Color(0, 100, 150); break;
             case 4: Image_4.color = new Color(0, 100, 150); break;
         }
+    }
+
+    public void beHappy()
+    {
+        if (Imafe_Face_Normal.enabled == true)
+        {
+            Imafe_Face_Normal.enabled = false;
+            Imafe_Face_Sad.enabled = false;
+            Imafe_Face_Happy.enabled = true;
+            StartCoroutine(beNormal());
+        }
+    }
+
+    public void beSad()
+    {
+        if (Imafe_Face_Normal.enabled == true)
+        {
+            Imafe_Face_Normal.enabled = false;
+            Imafe_Face_Happy.enabled = false;
+            Imafe_Face_Sad.enabled = true;
+            StartCoroutine(beNormal());
+        }
+    }
+
+    IEnumerator beNormal()
+    {
+        yield return new WaitForSeconds(1f);
+        Imafe_Face_Happy.enabled = false;
+        Imafe_Face_Sad.enabled = false;
+        Imafe_Face_Normal.enabled = true;
     }
 }
