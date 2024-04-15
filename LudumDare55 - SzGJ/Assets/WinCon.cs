@@ -9,6 +9,7 @@ public class WinCon : MonoBehaviour
     void Start()
     {
         NumberOfTowers = GameObject.FindGameObjectsWithTag("Tower").Length;
+        Debug.Log(SceneManager.sceneCountInBuildSettings);
     }
 
     public void CheckTowerNumber()
@@ -17,8 +18,9 @@ public class WinCon : MonoBehaviour
         if (NumberOfTowers <= 0)
         {
             Debug.Log("There are no more towers left!");
-            if (SceneManager.GetActiveScene().buildIndex <= SceneManager.sceneCount - 1)
+            if (SceneManager.GetActiveScene().buildIndex <= SceneManager.sceneCountInBuildSettings - 1)
             {
+                Debug.Log("Loading Next Level!");
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
         }
