@@ -180,7 +180,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Here you can choose which unit you want to place.\r\n\r"
+  m_text: "Here you can choose which unit you want to place.\r \n\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -17202,16 +17202,16 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'This strategy can be very handy when you want to conduct an evasive operation.
 
-    
+
 
     Oh,
     like in this situation. How convenient.
 
-    
 
-    Attacking from the front
-    is quite dangerous, but if you summon some units and try to attack the generators
-    from behind, you will have a much easier time.'
+
+    Attacking from the front is quite
+    dangerous, but if you summon some units and try to attack the generators from
+    behind, you will have a much easier time.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -17321,7 +17321,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &542462976
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17887,18 +17887,15 @@ MonoBehaviour:
   m_text: 'First Lesson! Your units can only be placed in zones designated by the
     Galactic Federation.
 
-    
-
-    The Federation has sprinkled these zones with
-    light-colored sand beforehand because they know your eyes are bad.
-
-    
 
 
-    Click
-    on this a few times, place some units.
+    The Federation has sprinkled these zones with light-colored
+    sand beforehand because they know your eyes are bad.
 
-    
+
+
+    Click on this a few
+    times, place some units.
 
 
 
@@ -17908,8 +17905,7 @@ MonoBehaviour:
 
 
 
-    Space button....again
-    to continue!'
+    Space button....again to continue!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -19086,10 +19082,10 @@ MonoBehaviour:
     But really. I have already explained this to so many unfortunate dum-dums, but
     they never listened. But you. You are different!
 
-    
 
-    Oh, that''s the
-    time already?! One last Space and let''s go to battle!'
+
+    Oh, that''s the time
+    already?! One last Space and let''s go to battle!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -20212,7 +20208,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 94.79, y: 261.9}
+  m_AnchoredPosition: {x: 94.79, y: 292.5}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1385289150
@@ -20237,10 +20233,10 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Speaking of towers!
 
-    
 
-    These are the trashy, rotten, filthy,
-    smelly Mars Towers.'
+
+    These are the trashy, rotten, filthy, smelly
+    Mars Towers.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -21376,18 +21372,18 @@ MonoBehaviour:
 
     Welcome to Horizon Assault!
 
-    
 
-    You are
-    the Lead Space Wizard in Operation: MarsTowers.
 
-    Your task is to destroy
-    all the bloody towers by summoning your army.
+    You are the
+    Lead Space Wizard in Operation: MarsTowers.
 
-    
+    Your task is to destroy all
+    the bloody towers by summoning your army.
 
-    Let''s see if you
-    can do the bare minimum. Press the Space button to continue!'
+
+
+    Let''s see if you can do the
+    bare minimum. Press the Space button to continue!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

@@ -25,4 +25,16 @@ public class WinCon : MonoBehaviour
             }
         }
     }
+
+    private void Update()
+    {
+        if (Input.GetKeyUp(KeyCode.R))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+        else if(Input.GetKeyUp(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+    }
 }

@@ -22850,7 +22850,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 21
-      m_TileSpriteIndex: 21
+      m_TileSpriteIndex: 24
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -23250,7 +23250,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 22
-      m_TileSpriteIndex: 22
+      m_TileSpriteIndex: 23
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -26771,14 +26771,14 @@ Tilemap:
     m_Data: {fileID: -1498946153, guid: e987c217cdb2e7745ad9133c065fe51e, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: 1120151490, guid: e987c217cdb2e7745ad9133c065fe51e, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: -982786072, guid: e987c217cdb2e7745ad9133c065fe51e, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: -250483071, guid: e987c217cdb2e7745ad9133c065fe51e, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: -982786072, guid: e987c217cdb2e7745ad9133c065fe51e, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: -1201134989, guid: 96541db4ab2bd3743a0bfd1ce2ed3aec, type: 3}
   - m_RefCount: 1
@@ -27184,7 +27184,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2007016244}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
   m_Name: 
@@ -27741,7 +27741,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 895149237634569674, guid: a7dadb2db66fe5647b867cfb10c15174, type: 3}
       propertyPath: money
-      value: 25000
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 895149237634569674, guid: a7dadb2db66fe5647b867cfb10c15174, type: 3}
       propertyPath: uiButtonManager

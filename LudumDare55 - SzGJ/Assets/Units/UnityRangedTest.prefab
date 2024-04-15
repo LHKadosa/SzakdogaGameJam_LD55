@@ -590,7 +590,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62c9f20c1185c7b49b9c6d622fdfe04f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 50
+  maxHealth: 75
   healthBar: {fileID: 2770664051895245433}
   health: {fileID: 4621231215352901614}
   bloodParticle: {fileID: 4034926553108225224, guid: 15fedda19c528f943a9bc3e99459e4f6, type: 3}
