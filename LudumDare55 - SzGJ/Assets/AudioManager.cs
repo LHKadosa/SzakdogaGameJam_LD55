@@ -9,6 +9,7 @@ public class AudioManager : MonoBehaviour
 
     public void PlaySFX(AudioClip clip)
     {
+        audioSource.pitch = Random.Range(0.8f, 1.2f);
         audioSource.PlayOneShot(clip);
     }
 }
