@@ -19,27 +19,27 @@ public class SummonController: MonoBehaviour
 
     void Update()
     {
-        /*
+        
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            summonUnitIndex = 0;
+            setSummonUnitIndex(0);
         }
         else if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            summonUnitIndex = 1;
+            setSummonUnitIndex(1);
         }
         else if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            summonUnitIndex = 2;
+            setSummonUnitIndex(2);
         }
         else if (Input.GetKeyDown(KeyCode.Alpha4))
         {
-            summonUnitIndex = 3;
+            setSummonUnitIndex(3);
         }
         else if (Input.GetKeyDown(KeyCode.Alpha5))
         {
-            summonUnitIndex = 4;
-        }*/
+            setSummonUnitIndex(4);
+        }
 
         money += passiveIncome;
         resetMoneyText();
