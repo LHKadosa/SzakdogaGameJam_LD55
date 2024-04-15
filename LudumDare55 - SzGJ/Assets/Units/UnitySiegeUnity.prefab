@@ -551,6 +551,7 @@ MonoBehaviour:
   maxHealth: 25
   healthBar: {fileID: 434050656559613736}
   health: {fileID: 2677053058081645832}
+  bloodParticle: {fileID: 4034926553108225224, guid: 15fedda19c528f943a9bc3e99459e4f6, type: 3}
 --- !u!114 &-1220508225925193995
 MonoBehaviour:
   m_ObjectHideFlags: 0
