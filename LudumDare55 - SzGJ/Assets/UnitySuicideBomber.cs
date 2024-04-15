@@ -12,6 +12,9 @@ public class UnitySuicideBomber : MonoBehaviour
     private Vector2 direction_mouse;
     private GameObject[] AllTargets;
     private GameObject ClosestTarget;
+    public GameObject grafics;
+    private SpriteRenderer spriteRenderer;
+    public Color frozenColor;
     private AudioManager audioManager;
     [SerializeField] GameObject ExplosionParticle;
 
@@ -22,6 +25,7 @@ public class UnitySuicideBomber : MonoBehaviour
     private void Awake()
     {
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+        spriteRenderer = grafics.GetComponent<SpriteRenderer>();
     }
 
     private void Start()
@@ -63,6 +67,7 @@ public class UnitySuicideBomber : MonoBehaviour
     public void SlowDown()
     {
         speed = speedMax / 4; //Valami idözitövel vissza lehetne majd állítani
+        spriteRenderer.color = frozenColor;
         StartCoroutine(setSpeedBack());
     }
     IEnumerator setSpeedBack()
@@ -71,6 +76,7 @@ public class UnitySuicideBomber : MonoBehaviour
         {
             yield return new WaitForSeconds(SetSpeedBackInSeconds);
             speed = speedMax;
+            spriteRenderer.color = Color.white;
         }
     }
 

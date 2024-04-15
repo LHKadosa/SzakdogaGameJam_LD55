@@ -9,6 +9,7 @@ public class HealthSummon : MonoBehaviour
 
     public Slider healthBar;
     public GameObject health;
+    public GameObject bloodParticle;
     private AudioManager audioManager;
     private SummonController sc;
 
@@ -47,6 +48,7 @@ public class HealthSummon : MonoBehaviour
     void Die()
     {
         sc.uiButtonManager.beSad();
+        Instantiate(bloodParticle, this.transform.position, Quaternion.identity);
         audioManager.PlaySFX(audioManager.unitDeathSfx);
         Destroy(gameObject);
     }
