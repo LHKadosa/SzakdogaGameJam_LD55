@@ -6,12 +6,12 @@ public class MainMenu : MonoBehaviour
 {
     public void LoadLevel1()
     {
-        SceneManager.LoadSceneAsync(1); 
+        SceneManager.LoadSceneAsync(2); 
     }    public void LoadLevel2()
     {
-        SceneManager.LoadSceneAsync(2); 
+        SceneManager.LoadSceneAsync(3); 
     }    public void LoadLevel3()
     {
-        SceneManager.LoadSceneAsync(3); 
+        SceneManager.LoadSceneAsync(4); 
     }
 }
